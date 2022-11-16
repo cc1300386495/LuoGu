@@ -1,6 +1,8 @@
 # [1007]魔法少女小Scarlet
 # 此处挖坑~貌似Python怎么优化都过不了诶
 import numpy as np
+
+
 n, m = map(int, input().split())
 
 matrix = [[0 for _ in range(n)] for _ in range(n)]
