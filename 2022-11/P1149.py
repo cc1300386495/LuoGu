@@ -34,6 +34,5 @@ cnt = 0
 for a in range(1112):
     for b in range(1112):
         if nums_need[a] + nums_need[b] + nums_need[a+b] == n:
-            print("a:{} b:{}".format(a, b))
             cnt += 1
 print(cnt)
