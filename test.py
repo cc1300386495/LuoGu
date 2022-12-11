@@ -1,10 +1,9 @@
 # 测试一些语法~
+import re
 
-import time
-import math
+s = '' + bin(10)[2:]
+p = re.compile(r'1')
 
-start = time.time()
-for i in range(10000):
-    math.factorial(10000)
-end = time.time()
-print(end - start)
+print(re.finditer(p, s))
+res = s.find('1')
+print(res)
