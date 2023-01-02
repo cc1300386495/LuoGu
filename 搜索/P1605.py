@@ -28,6 +28,6 @@ def dfs(x, y):
             dfs(x+move_x, y+move_y)
             matrix[x+move_x][y+move_y] = 0
 
-
+matrix[sx][sy] = 1
 dfs(sx, sy)
 print(res)
