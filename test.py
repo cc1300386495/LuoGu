@@ -1,9 +1,6 @@
 # 测试一些语法~
-import re
+from collections import deque
 
-s = '' + bin(10)[2:]
-p = re.compile(r'1')
+q = deque([1, 2, 3, 4, 5, 6, 7, 8])
 
-print(re.finditer(p, s))
-res = s.find('1')
-print(res)
+print(q[0], q[-1])
