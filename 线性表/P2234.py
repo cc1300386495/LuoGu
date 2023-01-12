@@ -24,14 +24,12 @@ for i in range(n):
         if nums[left][1] < day:
             valueLeft = nums[left][0]
             break
-        left -= 1
     # 同理找右边
     valueRight = 10000000
     for right in range(i+1, n):
         if nums[right][1] < day:
             valueRight = nums[right][0]
             break
-        right += 1
     tempMin = min(abs(value-valueRight), abs(value-valueLeft))
     res += tempMin
 print(res)
